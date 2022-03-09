@@ -29,33 +29,48 @@ struct ContentView: View {
                         .frame(width: 250, height: 60)
                         .background(.black)// bonus change it to cyan
                         .clipShape(RoundedRectangle(cornerRadius: 35))
-                        // cahnge name to iOS
+                        .onTapGesture {
+                            name="apple"
+                        }
+                            
+                        }
 
                     Text("Gamedev")
                         .frame(width: 250, height: 60)
                         .background(.black)// bonus change it to red
                         .clipShape(RoundedRectangle(cornerRadius: 35))
-                        // cahnge name to Gamedev
+                        .onTapGesture {
+                            name="gamedev"
+                        }
 
                     Text("Web")
                         .frame(width: 250, height: 60)
                         .background(.black)// bonus change it to blue
                         .clipShape(RoundedRectangle(cornerRadius: 35))
-                        // cahnge name to web
+                        .onTapGesture {
+                            name="web"
+                        }
+                
                         
                     Text("Android")
                         .frame(width: 250, height: 60)
                         .background(.black)// bonus change it to green
                         .clipShape(RoundedRectangle(cornerRadius: 35))
-                        // cahnge name to Android
-                }
+                        .onTapGesture {
+                            name="android"
+                        }
+            
+            }
+            
+            
+            
             
             }
             .font(.title)
             .foregroundColor(.white)
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
